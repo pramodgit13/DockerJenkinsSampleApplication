@@ -14,9 +14,10 @@ public class DockerJenkinsSampleApplication {
 	@RestController
 	public class Welcome {
 
-		@GetMapping
+		@GetMapping ("/")
 		public String HomePage() {
-			return "Hard work!";
+			Test t = new Test();
+			return "Hard work!"+ t;
 		}
 	}
 }
